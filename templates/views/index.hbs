@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Agency fb font -->
+    <link href="http://fonts.cdnfonts.com/css/agency-fb" rel="stylesheet">
+
+    <!-- Font awesom kit -->
+    <script src="https://kit.fontawesome.com/e5749e8af5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <section id="navigation-bar"> -->
+    <div class="">
+        <div class="row">
+            <nav class="navbar static-top navbar-dark bg-dark navbar-expand-lg">
+                <div class="container">
+                    <di class="">
+                        <img class="logo" src="images/logo/handshake.png" alt="handshake_logo">
+                        <a class="navbar-brand brand-nav" href="#">Friendzee</a>
+                    </di>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-item-container" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 nav-ul">
+                            <li class="nav-item">
+                                <a class="nav-link active nav-items" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-items" href="/timeline">Timeline</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-items" href="/network">
+                                    Network
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled  nav-items">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control search-input" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <!--removed this class="me-2" to remove the right margin after search box -->
+                            <button class="btn btn-outline-success search-btn" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div>
+                        <h1 class="banner-head">Make cool friends</h1>
+                    </div>
+                    <div>
+                        <p class="banner-text">
+                            Life is Better with friends.Friendzee is the best place to make friends around the world.
+                            Let's connect to the peoples and share happiness.
+                        </p>
+                        <p class="banner-text">
+                            What you are waiting for?Join Now
+                        </p>
+                    </div>
+                    <div class="banner-img-div">
+                        <img src="images/earth1.png" alt="earth" style="height:192px;">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-sm-6">
+                    <div class="reg-form-div">
+
+                        <div>
+                            <h1 style="color: #23f1e7;">Register Now!</h1>
+                        </div>
+                        <form action="/login" method="POST">
+                            <div class="reg-inputs">
+                                <input class="input-tag" type="text" name="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="reg-inputs">
+                                <input class="input-tag" type="tel" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="reg-inputs">
+                                <input class="input-tag" type="mail" name="email" placeholder="Enter your e-mail" required>
+                            </div>
+
+                            <div class="reg-inputs">
+                                <input class="input-tag" type="password" name="password" placeholder="Enter your password" required>
+                            </div>
+
+                            <div class="reg-inputs">
+                                <input class="input-tag" type="password" name="confirmPassword" placeholder="Confirm password" required>
+                            </div>
+                            <div>
+                                <p style="font-size:12px ;">Already have an account?<a
+                                        style="text-decoration: none; color: #47aeae;" href="/login">Please signin</a>
+                                </p>
+                                <button class="btn btn-primary reg-btn" type="submit" value="">Registerr Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+    </script>
+</body>
+
+</html>

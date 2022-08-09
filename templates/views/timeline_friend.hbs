@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Network</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="timeline.css">
+
+    <link rel="stylesheet" href="footer.css">
+    <!-- Font awesom kit -->
+    <script src="https://kit.fontawesome.com/e5749e8af5.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navigation-bar">
+        <div class="">
+            <div class="row">
+                <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+                    <div class="container">
+                        <div>
+                            <img class="logo" src="images/logo/handshake.png" alt="handshake_logo">
+                            <a class="navbar-brand brand-nav" href="#">Friendzee</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse nav-item-container" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-9 nav-ul">
+                                <li class="nav-item">
+                                    <a class="nav-link active nav-items" aria-current="page" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-items" href="/timeline">Timeline</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-items" href="/network">
+                                        Network
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-items disabled">About</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control search-input" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <!--removed this class="me-2" to remove the right margin after search box -->
+                                <button class="btn btn-outline-success search-btn" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section id="">
+        <div class="container">
+            <div class="row">
+                <div class="cover-image-div">
+                    <img class="cover-image" src="images/cover/cover.jpg" alt="beach">
+                    <div class="profile-pic-div col-md-4">
+
+                        <div class="col-md-12">
+                            <img class="profile-pic col-md-4" id="pro-pic" src="images/profile/profile.jpg"
+                                alt="profile-pic">
+                        </div>
+                        <div class="col-md-12">
+                            <h4 style="color: #47aeae;">Katherine Langford</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="timeline-content">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-2">
+                </div> -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="outer-card-div">
+                                <div class="card" style="max-width:100%; width: 18rem;">
+                                    <img class="card-img-top" src="images/timelinefr/cover1.jpg" alt="Card image cap">
+                                    <div class="image-prof">
+                                        <img class="image-pro" src="images/profile/user1.jpg" alt=""
+                                            style="height: 100px; width:100px;border-radius:50%; position:absolute">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row card-parent-row">
+                                            <div class="card-title-container">
+                                                <h6 class="card-title">Alexander</h6>
+                                            </div>
+                                            <div class="card-status">
+                                                following
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Work at microsoft.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <style>
+                            .image-prof {
+                                top: 7rem;
+                                position: absolute;
+                                left: 1rem;
+                            }
+
+                            .image-pro {
+                                border: 6px solid #fff;
+                            }
+
+                            .card-parent-row {
+                                justify-content: space-between;
+                                padding-top: 35px;
+                            }
+
+                            .card-title-container,
+                            .card-status {
+                                width: fit-content;
+                            }
+
+                            .card-text {
+                                font-size: x-small;
+                            }
+
+                            .card-title {
+                                color: #47aeae;
+                            }
+
+                            .card-status {
+                                color: #80bc22;
+                            }
+                            #outer-card-div{
+                                padding-bottom: 20px;
+                            }
+                        </style>
+                        <!-- 2nd timeline############### -->
+                        <div class="col-md-6">
+                            <div id="outer-card-div">
+
+                                <div class="card" style="max-width:100%; width: 18rem;">
+                                    <img class="card-img-top" src="images/timelinefr/cover2.jpg" alt="Card image cap">
+                                    <div class="image-prof">
+                                        <img class="image-pro" src="images/profile/user4.jpg" alt=""
+                                            style="height: 100px; width:100px;border-radius:50%; position:absolute">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row card-parent-row">
+                                            <div class="card-title-container">
+                                                <h6 class="card-title">Alex john</h6>
+                                            </div>
+                                            <div class="card-status">
+                                                following
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Work at microsoft.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ################## -->
+                        <!-- #####third card start##### -->
+                        <div class="col-md-6">
+                            <div id="outer-card-div">
+
+                                <div class="card" style="max-width:100%; width: 18rem;">
+                                    <img class="card-img-top" src="images/timelinefr/cover3.jpg" alt="Card image cap">
+                                    <div class="image-prof">
+                                        <img class="image-pro" src="images/profile/user3.jpg" alt=""
+                                            style="height: 100px; width:100px;border-radius:50%; position:absolute">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row card-parent-row">
+                                            <div class="card-title-container">
+                                                <h6 class="card-title">zeff olenski</h6>
+                                            </div>
+                                            <div class="card-status">
+                                                following
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Work at microsoft.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ####third card end#### -->
+                        <!-- #####fourt card starts### -->
+                        <div class="col-md-6">
+                            <div id="outer-card-div">
+
+                                <div class="card" style="max-width:100%; width: 18rem;">
+                                    <img class="card-img-top" src="images/timelinefr/cover4.jpg" alt="Card image cap">
+                                    <div class="image-prof">
+                                        <img class="image-pro" src="images/profile/user2.jpg" alt=""
+                                            style="height: 100px; width:100px;border-radius:50%; position:absolute">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row card-parent-row">
+                                            <div class="card-title-container">
+                                                <h6 class="card-title">Chris jhones</h6>
+                                            </div>
+                                            <div class="card-status">
+                                                following
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Work at microsoft.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #####fourth card ends### -->
+                    </div>
+                </div>
+                <div class="col-md-3 sticky-top">
+                    <div class="sidebar1">
+                        <div>
+                            <h4>
+                                Your activity
+                            </h4>
+                            <div class="activity-type">
+                                <p class="feed-content">
+                                    <a class="name" href="">Katherine</a> commented on a photo
+                                </p>
+                                <p class="feed-time">5 mins ago</p>
+                            </div>
+                            <hr>
+
+                            <div class="activity-type">
+                                <p class="feed-content">
+                                    <a class="name" href="">Katherine</a> has shared a photo
+                                </p>
+                                <p class="feed-time">2 hrs ago</p>
+                            </div>
+                            <hr>
+
+                            <div class="activity-type">
+                                <p class="feed-content">
+                                    <a class="name" href="">Katherine</a> liked his friend's photo
+                                </p>
+                                <p class="feed-time">1 day ago</p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div>
+                        <img class="logo" src="images/logo/handshake.png" alt="handshake_logo">
+                        <a class="footer-brand-name" href="#">Friendzee</a>
+                    </div>
+
+                    <div class="row">
+                        <a class="social-icons" href="">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a class="social-icons" href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="social-icons" href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="social-icons" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="social-icons" href="">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact us</h3>
+                    <div>
+                        <a class="contact-items" href=""> <i class="fa-solid fa-phone contact-icons"></i>+91
+                            123456987</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a class="contact-items" href="mailto: snjvkansari@hotmail.com"><i
+                                class="fa-solid fa-envelope contact-icons"></i>snjvkansari@hotmail.com</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <a class="contact-items"><i class="fa-solid fa-location-dot contact-icons"></i>New rajendra
+                            nagar, Raipur</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <div>
+                        <ul>
+                            <li class="footer-nav">
+                                <a class="footer-item" href="signup.html" target="_blank" rel="noopener noreferrer">Home</a>
+                            </li>
+                            <li class="footer-nav">
+                                <a class="footer-item" href="timeline.html" target="_blank" rel="noopener noreferrer">My timeline</a>
+                            </li>
+                            <li class="footer-nav">
+                                <a class="footer-item" href="timeline_friend.html" target="_blank" rel="noopener noreferrer">My network</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-sticky-row">
+            
+            Web reserved @2022
+        
+    </div>
+    </section>
+    <script>
+
+    </script>
+</body>
+
+</html>

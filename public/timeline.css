@@ -1,0 +1,165 @@
+body {
+    background: #fff !important;
+}
+
+/* profile pic and cover pic section */
+.cover-image {
+    width: 100%;
+    /* height: 50vh; */
+    height: 300px;
+}
+
+.cover-image-div {
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic-div {
+    position: absolute;
+    top: 8rem;
+    left: 5vh;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 12rem;
+    height: 12rem;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+/* ####### profile and cover ends##### */
+
+#timeline-content {
+    padding: 70px 0;
+}
+
+.post-box {
+    border-radius: 5px;
+    border: 1px solid #a7a0a069;
+    padding-left: 6px;
+}
+
+.post-btn {
+    padding: 0 15px;
+    border-radius: 12px;
+}
+
+.post-btn-container,
+.post-icon-container,
+.textarea-container {
+    width: fit-content;
+}
+
+.btn-icon {
+    color: #000;
+    border: none;
+    background: #ffffff;
+}
+
+.user-name {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #47aeae;
+}
+
+.follow {
+    color: #5fec5f;
+    font-size: small;
+}
+
+.post-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-details-container {
+    padding: 10px 10px 25px 10px;
+    background: #c5c2c21c;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+    border: 1px solid #dbd8d8;
+}
+
+.user-comments {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.friends {
+    font-weight: bold;
+    color: #47aeae;
+}
+
+.do-comment {
+    width: 100%;
+    border: 1px solid #dbd8d8;
+    border-radius: 3px;
+}
+
+.timeline-image {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+}
+
+/* ######sidebar##### */
+.activity-type {
+    padding: 10px 20px;
+}
+
+.post-time{
+    color:#9d9fa1 ;
+}
+.feed-content {
+    border-left: 2px solid #80bc22;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    color: #6d6e71;
+}
+
+.feed-time {
+    padding-left: 10px;
+    color: #9d9fa1;
+}
+.comments{
+    color: #6d6e71;
+    /* padding-left: 10px; */
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+}
+
+.name {
+    text-decoration: none;
+    color: #47aeae;
+}
+
+/* ###sidebar ends############ */
+
+/* #####footer##### */
+.footer-brand-name {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: larger;
+}
+
+.footer-brand-name:hover {
+    color: 000;
+}
+
+.social-icons {
+    width: fit-content;
+}
+
+.contact-items {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-icons {
+    padding-right: 15px;
+}

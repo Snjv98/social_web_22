@@ -1,0 +1,18 @@
+.footer-nav{
+    padding: 12px 0;
+    color: blueviolet;
+    font-size: larger;
+}
+.footer-item{
+    text-decoration: none;
+    color: #6d6e71;
+}
+.last-sticky-row{
+    text-align: center;
+    color: #d5c8c8;
+    background: #212529;
+    padding: 1rem;
+}
+.contact-items{
+    color: #6d6e71;
+}

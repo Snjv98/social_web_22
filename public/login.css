@@ -1,0 +1,87 @@
+body{
+    background-image: url("images/body_background.jpg");
+    /* opacity: 0.5; */
+}
+.logo{
+    height: 40px;
+}
+.brand-nav{
+    color: #fff;
+    font-weight: bold;
+}
+.nav-item-container{
+    justify-content: right;
+}
+.nav-ul{
+    justify-content: end;
+}
+.search-input{
+    width: 160px;
+    height: 30px;
+    border-radius: 16px 0 0 16px;
+    border: none;
+    box-shadow: none !important;
+    outline: none;
+}
+.search-btn{
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    border-radius: 0px 16px 16px 0 !important;
+    box-shadow: none !important;
+}
+.nav-items{
+    color: #fff !important;
+    font-weight: 500;
+}
+.navbar-toggler:focus, .navbar-toggler-icon:focus{
+    /* outline: none; */
+    box-shadow: none; /*This line is to remove shadow around the toggler icon(hamburger) in nav bar on clicking*/
+}
+/*######################### content section #####################*/
+.banner-head{
+    color: #fff;
+    font-family: 'Agency FB', sans-serif;
+}
+.banner-text{
+    color: #fff;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 20px;
+}
+.banner-img-div{
+    text-align: center;
+    margin-bottom: 12px;
+}
+/*##################Registration form################*/
+.reg-form-div{
+    background: #fff;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 20px;
+    border-radius: 30px 0 30px 0;
+}
+.reg-inputs{
+    margin: 30px auto;
+}
+.input-tag{
+    width: 100%;
+    border: 1px solid #a7a0a069;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.reg-btn{
+    background: #47aeae;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 30px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Content section */
+#content{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+/* .active{
+    background-color: aqua;
+} */
